@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Amyklaion</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	
+	    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	
+	
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>Amyklaion Pasta Branding</h1>
+		   <ul>
+		   <li>Product design</li>
+	   	   <li>Branding/Identity</li>
+	       <li>Illustration</li>
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>Amyklaion is a branding and packaging design project that revolves around the creation of a unique pasta brand inspired by the legendary warriors of ancient Sparta. The concept behind Amyklaion aims to capture the essence of Spartan culture, strength, and culinary traditions.</p>
+		     
+		<p>The name "Amyklaion" is derived from the ancient city of Amyklai, which was an integral part of the Spartan civilization. This name choice adds an authentic touch to the brand, paying homage to the historical roots from which the pasta is derived.</p>
+			
+        <p>The logo design features a stylized Spartan meander, symbolizing courage, resilience, and the spirit of the warriors. The color palette consists of earthy tones, evoking the natural landscapes of Sparta, while the typography combines classical elegance with a modern twist, representing the brand's blend of tradition and innovation. </p>
+    	  
+    	   
+		 <p>The packaging design showcases hand-drawn illustrations of ancient Greek muses and figures, providing a visual narrative that transports consumers to the captivating world of ancient Greece. The use of a white motif against a blue background accentuates the simplicity and purity of the ingredients, reflecting the brand's commitment to using high-quality, organic elements.</p>
+         
+
+	
+		</div>
+</section>
+			
+			
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="amyklaion/mockup2.jpg" alt="Project Image">
+		</div>
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/logo Presentation.jpg" alt="Project Image">
+		</div>
+
+	    <div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/fiogakia template-2.jpg" alt="Project Image">
+		</div>
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/photo1.jpg" alt="Project Image">
+		</div>
+	
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/photo3.jpg" alt="Project Image">
+		</div>
+
+	
+	    <div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/penne template-1.jpg" alt="Project Image">
+		</div>
+	
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/spaghetti template.jpg" alt="Project Image">
+		</div>
+		
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="amyklaion/TRIFOLD-MOCKUP2.jpg" alt="Project Image">
+		</div>
+	
+	<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>
+
+</body>
+</html>

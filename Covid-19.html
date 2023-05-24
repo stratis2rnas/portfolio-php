@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Covid-19 Infographics</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>COVID-19 INFOGRAPHICS </h1>
+		   <ul>
+		   <li>Infographics</li>
+		   <li>Illustration</li>
+		   
+		   
+	       
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>The COVID-19 infographic project focuses on presenting statistical data related to the pandemic in Greece during the year 2020. The goal is to create an engaging and visually appealing design that effectively communicates key insights about the virus and its impact on the population.</p>
+		     
+		<p>The design incorporates various statistics, such as the average age of COVID-19 cases, the percentage of people who declined vaccination, and other relevant data points. The infographic utilizes clear and concise visual representations, including charts, graphs, and icons, to present these statistics in an easily digestible format.</p>
+			
+        <p>To enhance visual impact, a vibrant color palette featuring neon pink and blue is employed throughout the infographic. These colors add a modern and attention-grabbing element to the design, making it visually appealing and enticing for viewers.</p>
+    	  
+
+
+	
+		</div>
+</section>
+			
+				
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="infographic/info.jpg" alt="Project Image">
+		</div>
+	    
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="infographic/mockup1.jpg" alt="Project Image">
+		</div>
+	
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="infographic/mockup2.jpg" alt="Project Image">
+		</div>	  
+
+	<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>	   
+	
+
+
+</body>
+</html>

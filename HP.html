@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HP</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>HARRY POTTER BOOK COVER</h1>
+		   <ul>
+		   <li>Illustration</li>
+		   <li>Product design</li>
+	       
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>This fanmade Harry Potter book cover project is a visually captivating reimagination of the third installment, "Prisoner of Azkaban." For this particular project, I chose to focus on a pivotal moment in the narrative, where Harry Potter confronts the powerful Patronus charm in the form of a white stag. The cover illustration portrays Harry, with his wand raised, surrounded by an ethereal glow emanating from the stag. This scene symbolizes bravery, protection, and the triumph of light over darkness.</p>
+		     
+		<p>With meticulous attention to detail, I brought this enchanting moment to life through digital illustration techniques. The intricate depiction of Harry waving his wand, illuminated by the radiant glow of the Patronus, aims to capture the awe-inspiring magic that permeates the wizarding world.</p>
+			
+        <p>Through this fanmade book cover, I aimed to pay homage to J.K. Rowling's remarkable storytelling while adding my own creative touch. It is my sincere hope that this visual representation of "Prisoner of Azkaban" stirs the imagination and kindles fond memories for fans of the Harry Potter series.</p>
+    	  
+    	   
+		 <p>Thank you for exploring this project within my portfolio. I hope it transports you back to the magical world of Hogwarts and reignites your love for the captivating story of Harry Potter and his extraordinary adventures. </p>
+         
+
+	
+		</div>
+</section>
+			
+			
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="harry potter/book cover2.jpg" alt="Project Image">
+		</div>
+
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="harry potter/HP_mockup1.jpg" alt="Project Image">
+		</div>
+	
+<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>	   
+
+</body>
+</html>

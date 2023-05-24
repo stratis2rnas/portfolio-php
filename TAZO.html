@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TAZO</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	
+	
+	
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	
+	
+	
+	
+	
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>TAZO TEA </h1>
+		   <ul>
+		   <li>Rebranding</li>
+		   <li>Product design</li>
+		   <li>Illustration</li>
+		   
+		   
+	       
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>I am excited to present my rebranding project for TAZO's "Giant Peach" tea, a captivating exploration of the mystical world of shamanism and animal spirits. This project revolves around transforming the packaging and brand story for TAZO's renowned tea variety while keeping the existing logo intact.</p>
+		     
+		<p>The surrounding illustration features a mesmerizing array of animal spirits, drawn from the rich mythology and belief systems of shamanic traditions. Each animal spirit is intricately depicted, symbolizing different attributes and energies associated with the tea's unique flavor profile. These spirits evoke a sense of ancient wisdom, connection to nature, and spiritual guidance that resonates with the essence of the tea.</p>
+			
+        <p>The choice of colors, textures, and typography in the packaging design further enhances the shamanic theme. Warm earthy tones, soothing gradients, and carefully selected fonts create a visual language that reflects the mystical and transformative nature of the tea drinking experience. </p>
+    	  
+    	   
+		 <p>Through this rebranding project, the goal is to captivate tea lovers and entice them to explore the world of TAZO's "Giant Peach" tea from a fresh perspective. By embracing the spiritual and mystical elements of shamanism, the new packaging and brand story create a unique and memorable experience for consumers.  </p>
+         
+
+	
+		</div>
+</section>
+			
+			
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="ταζο/tazo_mockup1.jpg" alt="Project Image">
+		</div>
+	
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="ταζο/ταζο.jpg" alt="Project Image">
+		</div>	  
+	
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="ταζο/συσκευασια.jpg" alt="Project Image">
+		</div>
+	    
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="ταζο/tazo_mockup2.jpg" alt="Project Image">
+		</div>	   	
+ 
+<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>		
+
+
+</body>
+</html>

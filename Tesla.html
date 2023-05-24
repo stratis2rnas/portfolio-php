@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TESLA</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	
+	
+	
+	
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	
+	
+	
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>TESLA SCIENCE CENTER </h1>
+		   <ul>
+		   <li>Rebranding</li>
+		   <li>Logo design</li>
+		   <li>Merchandising</li>
+	       
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>The centerpiece of the rebranding is the newly redesigned logo for the Tesla Science Center. The logo maintains the iconic essence of the original design while infusing it with a contemporary aesthetic. It features a sleek and minimalist representation of the center's name, emphasizing clean lines and a bold typography choice that exudes a sense of modernity and sophistication.</p>
+		     
+		<p>To enhance the scientific theme, the logo is surrounded by a mesmerizing animation of moving neutrons. These swirling particles symbolize the energy, movement, and constant evolution of scientific discovery. The dynamic nature of the neutrons adds a captivating element to the logo, capturing the attention and curiosity of viewers.</p>
+			
+        <p>The rebranded logo is seamlessly integrated into various business materials, including letterheads, business cards, and email signatures.  </p>
+    	  
+    	   
+		 <p>As part of the rebranding efforts, a new trifold brochure has been created to showcase the Tesla Science Center's mission, research, and achievements. The brochure embraces the modernized logo as its focal point, featuring it prominently on the cover to establish brand recognition. The layout of the brochure is carefully designed to provide a clear and engaging presentation of information, with sections dedicated to the center's history, projects, and future initiatives. Vibrant imagery, concise copywriting, and a consistent design language ensure that the brochure effectively communicates the center's goals and values to its target audience. </p>
+         
+
+	
+		</div>
+</section>
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/tesla logo presentation.jpg" alt="Project Image">
+		</div>
+	
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/tesla mockup 2.jpg" alt="Project Image">
+		</div>	
+	
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/tesla logo mockup1.jpg" alt="Project Image">
+		</div>	
+	
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/tesla card visit mockup1.jpg" alt="Project Image">
+		</div>	
+	
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/tesla_mockup_1 project cover.jpg" alt="Project Image">
+		</div>
+
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/trifold front page.jpg" alt="Project Image">
+		</div>
+	
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="tesla/trifold back page.jpg" alt="Project Image">
+		</div>
+	
+<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>		
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kallisti Wine</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	
+	
+	
+	
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+ <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>KALLISTI WINE </h1>
+		   <ul>
+		   <li>Product design</li>
+	   	   <li>Branding/Identity</li>
+	       <li>Illustration</li>
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>The Kallisti Wine project was a passion project for me, and I am honored to have had the opportunity to work on such a beautiful brand. As a solo designer, I was inspired by the unique blend of nature and winemaking found on the Greek island of Samos.</p><br>
+		<p>The concept behind the project was to create a wine label design that combines the elegant and luxurious feel of the wine with elements inspired by the island's nature.</p><br>
+		     
+		<p>With a deep respect for the island's heritage and culture, I carefully crafted a custom logo and packaging design that captured the essence of Samos. The label design features elegant typography and a custom logo that perfectly embodies the rugged terrain and coastal waters of the island.
+		Throughout the project, I paid close attention to every detail, ensuring that each aspect of the design was thoughtfully considered. From the use of high-quality materials to the stunning color palette, I strived to create a design that was both beautiful and functional. </p><br>
+    	  
+    	   
+		 <p>I am proud of the results of this project, and I believe that it showcases my ability to create visually stunning branding solutions that are both authentic and effective. I hope that this project inspires others to explore the beauty of Samos and the unique qualities of its winemaking traditions.
+			      
+		In sharing this project with potential clients, I hope to demonstrate my commitment to delivering exceptional designs that exceed expectations and elevate brands to new heights.</p>
+         
+
+	
+		</div>
+</section>
+			
+			
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="κρασι/winemockup2.jpg" alt="Project Image">
+		</div>
+
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="κρασι/logoidea.jpg" alt="Project Image">
+		</div>
+	
+	    <div class="cover-image">
+			<img class="ImgThumbnail" src="κρασι/winemockup3.jpg" alt="Project Image">
+		</div>
+
+<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>
+	
+
+</body>
+	
+	
+</html>

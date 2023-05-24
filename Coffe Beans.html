@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coffee Beans</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="SVG/favicon.svg">
+	   
+	
+	<script>
+      window.addEventListener("DOMContentLoaded", function() {
+        var loader = document.querySelector(".loader");
+        loader.style.display = "flex"; // show the loader
+
+        // Hide the loader once the page finishes loading
+        window.addEventListener("load", function() {
+          loader.style.display = "none";
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+	
+	 <div class="loader">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+	
+	<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <div class="header__logo">
+        <a href="home2.php"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="portfolio page .html">Portfolio</a></li>
+          <li><a href="home2.php">About</a></li>
+          <li><a href="home2.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+	
+   <section class="project__details">
+    
+	   
+	   <div class="project-identity">
+	   <h1>COFFEE BEANS</h1>
+		   <ul>
+		   <li>Product design</li>
+	   	   <li>Branding/Identity</li>
+	       <li>Illustration</li>
+	       </ul>
+	   </div>
+	   
+		<div class="project-info" >
+			
+		<p>The Psychedelic Coffee project is a dynamic and visually engaging exploration
+         of the intersection between coffee culture and psychedelic art. Drawing inspiration 
+         from the vibrant colors and bold patterns associated with psychedelic design, 
+         this project offers a fresh and unconventional take on traditional coffee packaging.</p>
+		     
+		<p>The goal was to create a branding and packaging design that would capture the essence of both coffee and psychedelic art, creating a unique and visually stunning brand.</p>
+			
+        <p>Through careful research and creative experimentation, I developed a unique and 
+        cohesive brand identity that captures the essence of the coffee and the psychedelic aesthetic. 
+        The packaging design features bold, swirling patterns in vibrant hues of pink, purple, and blue, 
+        creating an eye-catching and memorable visual impact. </p>
+    	  
+    	   
+		 <p>In addition to the packaging design, the project includes a range of mockups that showcase how 
+    	the brand identity can be applied across a variety of mediums, including coffee cups and posters  </p>
+         
+
+	
+		</div>
+</section>
+			
+			
+		<div class="cover-image">
+			<img class="ImgThumbnail" src="καφες/τελική εργασιά psychedelic2.jpg" alt="Project Image">
+		</div>
+
+	    <div class="cover-image">
+			<img  class="ImgThumbnail" src="καφες/Coffee_Bag_v01.jpg" alt="Project Image">
+		</div>
+	
+	    <div class="cover-image">
+			<img  class="ImgThumbnail" src="καφες/mockup4.jpg" alt="Project Image">
+		</div>
+	
+		<div class="cover-image">
+			<img  class="ImgThumbnail" src="καφες/mockup5.jpg" alt="Project Image">
+		</div>
+	
+	<div class="modal2">
+<span class="close">×</span>
+<img class="modalImage" id="img01"/>
+</div>
+	
+	<script>
+	
+	var modalEle = document.querySelector(".modal2");
+	var modalImage = document.querySelector(".modalImage");
+	Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
+   	item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+	document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+	
+	
+</script>
+
+</body>
+</html>
